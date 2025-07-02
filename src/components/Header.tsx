@@ -24,8 +24,8 @@ const Header: React.FC = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="bg-gray-800 text-white p-3 sticky top-0 z-50 shadow-md h-20 flex ">
-      <div className="flex justify-between items-center max-w-7xl mx-auto px-[100px] ">
+    <header className="bg-gray-800 text-white p-3 sticky top-0 z-50 shadow-md md:px-[100px]">
+      <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo & Name */}
         <Link href="/" className="flex items-center space-x-2">
           <Image
@@ -40,7 +40,7 @@ const Header: React.FC = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-6 items-center">
+        <nav className="hidden md:flex space-x-6 items-center ">
           {menuItems.map(({ label, href }) => (
             <Link key={label} href={href} className="hover:underline">
               {label}
