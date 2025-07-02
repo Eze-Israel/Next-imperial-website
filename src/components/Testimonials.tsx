@@ -10,32 +10,35 @@ import Image from 'next/image';
 
 const testimonials = [
   {
-    name: 'Muhammad Umair',
-    role: 'Product Designer at TechNova',
+    name: '— Emmanuel I',
+    role: 'Freelance Product Designer',
     feedback:
-      'The professionalism and technical expertise that Eze Israel brought to our project were outstanding. He took our static design and brought them to life with seamless animations and flawless responsiveness. I highly recommend him for any front-end job.',
-    image: '/images/testi9.png',
+      "Joining the Graphic Design and UI/UX program at Next-Imperial was a game-changer for me. The instructors broke down complex tools like Figma and Photoshop in a way that made design feel natural. Today, I confidently design interfaces for mobile apps and websites—and clients love my work!",
+    image: '/images/i.jpeg',
   },
   {
-    name: 'Samantha Lee',
-    role: 'Marketing Director at BrightPath',
+    name: '— Mary A., ',
+    role: 'Frontend Developer',
     feedback:
-      'From the very first meeting, Eze Israel understood our vision and translated it into a stunning, user-friendly interface. The redesign not only improved aesthetic but also enhanced the overall user experience. Truly a pleasure to work with!',
-    image: '/images/testi2.jpg',
+      "From zero coding knowledge to building fully responsive websites—Next-Imperial made it possible. The Web Development course gave me hands-on experience with HTML, CSS, JavaScript, and React. Thanks to their support, I now work as a junior frontend developer at a tech startup.",
+    image: '/images/k.jpeg',
+    
   },
   {
-    name: 'Michael Green',
-    role: 'CEO of EcoShop',
+    name: '— Chinedu O., ',
+    role: 'Entrepreneur & Digital Marketer',
     feedback:
-      'Eze Israel is not just a talented front-end developer but also a fantastic collaborator. He maintained clear communication throughout the project, ensuring all of our feedback was implemented promptly.',
-    image: '/images/testi6.jpg',
+          "Next-Imperial’s Digital Marketing course didn’t just teach theory—it gave me real-world skills. I now run targeted ad campaigns, create social media content that converts, and use analytics to make smart decisions. My small business has seen massive growth because of what I learned.",
+    image: '/images/j.jpeg',
+
   },
   {
-    name: 'Jessica Patel',
-    role: 'Founder of FitSphere',
+    name: '— Blessing U.,',
+    role: 'Freelance Desktop Publisher',
     feedback:
-      'We hit multiple roadblocks during production, but Eze Israel tackled each issue head-on with innovative solutions. His attention to detail and technical knowledge saved us time and elevated the final product.',
-    image: '/images/testi7.jpg',
+          "Before this training, I struggled with designs for flyers and business documents. Now I use CorelDRAW and Microsoft Publisher like a pro. The Desktop Publishing course was practical, clear, and fun. I’m now designing for churches, schools, and small businesses in my area.",
+    image: '/images/L.jpg',
+ 
   },
 ];
 
@@ -75,7 +78,7 @@ const Testimonies = () => {
                   src={testimonial.image}
                   width={160}
                   height={160}
-                  className="rounded-full object-cover w-40 h-40 border-4 border-green-300 shadow-md"
+                  className="rounded-full object-cover w-40 h-40 border-4 border-blue-400 shadow-md"
                 />
               </div>
 
