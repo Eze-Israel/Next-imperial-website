@@ -24,8 +24,8 @@ const Header: React.FC = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="bg-gray-800 text-white p-3 sticky top-0 z-50 shadow-md md:px-[100px]">
-      <div className="flex justify-between items-center max-w-7xl mx-auto">
+    <header className="bg-gray-800 text-white p-3 sticky top-0 z-50 shadow-md h-20 md:px-[20vh]">
+      <div className="flex justify-between items-center max-w-7xl mx-auto  h-15">
         {/* Logo & Name */}
         <Link href="/" className="flex items-center space-x-2">
           <Image
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
             priority
             className="rounded-full"
           />
-          <h1 className="text-lg md:text-2xl font-semibold">Next Imperial Ltd</h1>
+          <h1 className="text-lg md:text-2xl font-semibold">Next Imperial Tech</h1>
         </Link>
 
         {/* Desktop Menu */}

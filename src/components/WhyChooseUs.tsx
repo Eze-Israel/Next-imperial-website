@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
     id='services'
     >
       <div className='text-center'>
-     <h2 className="text-center font-bold text-2xl md:text-3xl text-gray-700">Why Choose Us</h2>
+     <h2 className="text-center font-bold text-2xl md:text-3xl text-white">Why Choose Us</h2>
          <div className="w-16 h-1 bg-indigo-500 mx-auto mt-3"></div>
          </div>
     <div
