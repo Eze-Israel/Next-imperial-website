@@ -6,7 +6,7 @@ import Faq from '@/components/FAQ'
 import Testimonies from '@/components/Testimonials'
 import { useLayoutEffect } from 'react'
 
-const index = () => {
+const Index = () => {
   useLayoutEffect(()=> {
    window.scrollTo(0,0)
   }, [])
@@ -22,4 +22,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
