@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
     
    
    {services.map((service, index) => (
-    <div key={index} className='bg-gray-200 md:p-6 p-8  rounded-lg  flex flex-col text-center'>
+    <div key={index} className='bg-gray-300 md:p-6 p-8  rounded-lg  flex flex-col text-center'>
      <Image  
      className={`md:w-16 w-8 md:h-16 h-8 mb-4 rounded-lg mx-auto ${service.bg}`}
      src={service.icon}
@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
      height={100}
      />
      <h3
-     className='text-xl font-semibold' 
+     className='text-xl font-semibold text-white' 
      >
       {service.title}
      </h3>
