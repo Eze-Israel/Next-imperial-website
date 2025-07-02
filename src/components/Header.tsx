@@ -1,113 +1,104 @@
 'use client';
 
-import React, {useState} from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import { motion } from "framer-motion";
-import { FaBars, FaTimes } from "react-icons/fa";
+import React, { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import {
   HomeIcon,
   PhoneIcon,
   UserGroupIcon,
   ServerIcon,
-} from  '@heroicons/react/24/outline';
+} from '@heroicons/react/24/outline';
 
-const Header: React.FC = () => { 
+const menuItems = [
+  { label: 'Home', icon: HomeIcon, href: '/' },
+  { label: 'About Us', icon: UserGroupIcon, href: '/About' },
+  { label: 'Contact', icon: PhoneIcon, href: '/Contact' },
+  { label: 'Services', icon: ServerIcon, href: '/Services' },
+];
+
+const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-      const toggleMenu = () => setIsOpen(!isOpen);
-
-    
-    //ARRAY OF LINKS ON NAV MOBILE MENU
-    
-    const menuItems = [
-      { label: "Home", icon: HomeIcon, href: "/" },
-      { label: "About Us", icon: UserGroupIcon, href: "/About" },
-      { label: "Contact", icon: PhoneIcon, href: "/Contact"},
-      {label: "Services", icon: ServerIcon, href: "/Services" }
-    ];
-
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className='bg-gray-800 text-white p-2  shadow:md sticky top-0 z-50 md:flex justify-between '>
-     <button onClick={toggleMenu} className="sticky  z-50 text-blue-500 text-2xl  bars">
-        {isOpen ? <FaTimes /> : <FaBars />}
-      </button>
-      <div >
+    <header className="bg-gray-800 text-white p-3 sticky top-0 z-50 shadow-md h-20 flex ">
+      <div className="flex justify-between items-center max-w-7xl mx-auto px-[100px] ">
+        {/* Logo & Name */}
+        <Link href="/" className="flex items-center space-x-2">
+          <Image
+            src="/images/NEXT.png"
+            alt="NextLogo"
+            width={40}
+            height={40}
+            priority
+            className="rounded-full"
+          />
+          <h1 className="text-lg md:text-2xl font-semibold">Next Imperial Ltd</h1>
+        </Link>
+
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex space-x-6 items-center">
+          {menuItems.map(({ label, href }) => (
+            <Link key={label} href={href} className="hover:underline">
+              {label}
+            </Link>
+          ))}
+          <Link
+            href="/Contact"
+            className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition"
+          >
+            Get Started
+          </Link>
+        </nav>
+
+        {/* Mobile Menu Toggle */}
+        <button
+          onClick={toggleMenu}
+          className="md:hidden text-2xl text-blue-500 focus:outline-none"
+        >
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
       {isOpen && (
         <motion.nav
-          initial={{ x: "-100%" }}
+          initial={{ x: '-100%' }}
           animate={{ x: 0 }}
-          transition={{ type: "spring", stiffness: 200, damping: 20 }}
-          // START FROM HERE
-          className="nava w-full h-screen z-50"
+          exit={{ x: '-100%' }}
+          transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+          className="md:hidden mt-4 bg-gray-900 rounded-lg shadow-lg"
         >
-          <ul className="flex flex-col space-y-2 bg-gray-800/70">
+          <ul className="flex flex-col p-4 space-y-3">
             {menuItems.map(({ label, icon: Icon, href }) => (
               <li key={label}>
-                <a
+                <Link
                   href={href}
-                  className="w-full flex items-center space-x-3 text-left 
-                  text-lg p-3 rounded-lg hover:bg-black/40 mt-3"
+                  className="flex items-center space-x-3 hover:bg-gray-700 p-2 rounded"
+                  onClick={() => setIsOpen(false)}
                 >
-                  <Icon className="w-5 h-5 text-blue-500" />
+                  <Icon className="w-5 h-5 text-blue-400" />
                   <span>{label}</span>
-                </a>
-                
+                </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="/Contact"
+                className="block bg-blue-500 text-center text-white py-2 rounded hover:bg-blue-600"
+                onClick={() => setIsOpen(false)}
+              >
+                Get Started
+              </Link>
+            </li>
           </ul>
-
         </motion.nav>
       )}
-    </div>
+    </header>
+  );
+};
 
-
-        <div className='flex  w-full md:mx-[100px] md:my-[15px] justify-between items-center'>
-
-        <div className=''> 
-       {!isOpen && (
-        <Link className='flex flex-row' href="/">
-        <Image
-        src="/images/NEXT.png"
-        alt='NextLogo'
-        width={40}
-        height={40}
-        priority
-        className='cursor-pointer rounded-full relative'
-        />
-        <h1 className='md:text-3xl mt-1 ml-2'>Next Imperial Limited</h1>
-        </Link>
-        )}
-         </div>
-
-           <div className='hidden md:block mt-3'>
-            {!isOpen && (
-              <div className='flex justify-end gap-3  '>
-            <div >
-            <Link href="/" className="hover:underline">Home</Link>
-            </div>
-            <div>
-            <Link href="/About" className="hover:underline">About Us</Link>
-            </div>
-            <div>
-            <Link href="/Services" className="hover:underline">Services</Link>
-            </div>
-            <div>
-            <Link href="/Contact" className="hover:underline">Contact</Link>
-            </div>
-            <div>
-            <Link href="/Contact" className="hover:bg-gray-400 bg-blue-400 text-white rounded-[35px] py-2 px-3">Get Started</Link>
-            </div>
-            
-            </div>
-            )}
-            </div>
-
-          </div>
-          </div>
-          
-       
-  )
-}
-
-export default Header
+export default Header;

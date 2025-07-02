@@ -28,9 +28,9 @@ body {
 .nava{
   display: none;
 }
-.bars{
+/* .bars{
   display: none;
-}
+} */
 
 
 @media screen and (max-width: 768px) {
@@ -38,14 +38,14 @@ body {
   display: block;
   
   }
-  .bars{
+  /* .bars{
     display: flex;
     justify-content: center;
     align-items: center;
     float: right;
     margin: auto;
     
-  }
+  } */
   
 }
 

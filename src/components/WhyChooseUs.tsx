@@ -41,7 +41,10 @@ const WhyChooseUs = () => {
     <section className='py-16'
     id='services'
     >
-      <SectionTitle title='Why Choose Us'/>
+      <div className='text-center'>
+     <h2 className="text-center font-bold text-2xl md:text-3xl text-gray-700">Why Choose Us</h2>
+         <div className="w-16 h-1 bg-indigo-500 mx-auto mt-3"></div>
+         </div>
     <div
     className='flex md:flex-row flex-col md:gap-8 gap-4 mt-8 px-6 md:px-24'>
     
