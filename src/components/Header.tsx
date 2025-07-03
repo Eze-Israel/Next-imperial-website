@@ -70,7 +70,7 @@ const Header: React.FC = () => {
           animate={{ y: 0 }}
           exit={{ y: '-100%' }}
           transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-          className="md:hidden mt-2 bg-gray-900 rounded-lg shadow-lg min-h-screen z-50 ml-[-20]"
+          className="md:hidden mt-2 bg-gray-900 rounded-lg shadow-lg min-h-screen z-50 ml-[-20] min-w-screen"
         >
           <ul className="flex flex-col p-4 space-y-3">
             {menuItems.map(({ label, icon: Icon, href }) => (
