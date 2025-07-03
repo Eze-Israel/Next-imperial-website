@@ -14,9 +14,9 @@ import {
 
 const menuItems = [
   { label: 'Home', icon: HomeIcon, href: '/' },
-  { label: 'About Us', icon: UserGroupIcon, href: '/About' },
-  { label: 'Contact', icon: PhoneIcon, href: '/Contact' },
-  { label: 'Services', icon: ServerIcon, href: '/Services' },
+  { label: 'About Us', icon: UserGroupIcon, href: '/' },
+  { label: 'Contact', icon: PhoneIcon, href: '/' },
+  { label: 'Services', icon: ServerIcon, href: '/' },
 ];
 
 const Header: React.FC = () => {
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
           animate={{ y: 0 }}
           exit={{ y: '-100%' }}
           transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-          className="md:hidden mt-2 bg-gray-900 rounded-lg shadow-lg min-h-screen z-50 ml-[-20] min-w-screen"
+          className="md:hidden mt-2 bg-gray-900 rounded-lg shadow-lg min-h-screen z-50 mx-[-15] min-w-screen"
         >
           <ul className="flex flex-col p-4 space-y-3">
             {menuItems.map(({ label, icon: Icon, href }) => (

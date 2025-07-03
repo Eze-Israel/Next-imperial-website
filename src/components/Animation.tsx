@@ -33,7 +33,7 @@ const slides = [
 
 export default function SwiperCarousel() {
   return (
-    <div className="relative w-full overflow-hidden shadow-lg h-[85vh] border border-red-500 border-4">
+    <div className="relative w-full overflow-hidden shadow-lg h-[85vh] ">
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: 5000, disableOnInteraction: true }}

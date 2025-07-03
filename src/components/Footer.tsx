@@ -30,19 +30,19 @@ const Footer = () => {
             </li>
 
             <li className='mb-2'>
-              <Link href="/about" className='hover:underline'>
+              <Link href="/" className='hover:underline'>
               About
               </Link>
             </li>
 
             <li className='mb-2'>
-              <Link href="/Services" className='hover:underline'>
+              <Link href="/" className='hover:underline'>
               Services
               </Link>
             </li>
 
             <li className='mb-2'>
-              <Link href="/contact" className='hover:underline'>
+              <Link href="/" className='hover:underline'>
               Contact
               </Link>
             </li>
@@ -78,7 +78,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href='https://wa.me/+2348033886920' target='_blank'>
+              <a href='https://wa.me/+2348166558072' target='_blank'>
               <FaWhatsapp  className='p-4 rounded-full text-blue-700 text-6xl' />
               </a>
             </li>
