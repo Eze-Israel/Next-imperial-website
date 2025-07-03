@@ -85,9 +85,9 @@ const Testimonies = () => {
               {/* TEXT */}
               <div className="text-center md:text-left flex-1">
                 <p className="text-gray-700 text-lg leading-relaxed mb-4 relative">
-                  <span className="text-3xl text-green-500 font-bold">&ldquo;</span>
+                  <span className="text-3xl text-blue-500 font-bold">&ldquo;</span>
                   {testimonial.feedback}
-                  <span className="text-3xl text-green-500 font-bold">&rdquo;</span>
+                  <span className="text-3xl text-blue-500 font-bold">&rdquo;</span>
                 </p>
                 <p className="font-bold text-lg text-gray-800">{testimonial.name}</p>
                 <p className="text-gray-500 text-sm">{testimonial.role}</p>

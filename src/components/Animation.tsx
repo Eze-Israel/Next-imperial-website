@@ -33,7 +33,7 @@ const slides = [
 
 export default function SwiperCarousel() {
   return (
-    <div className="relative w-full overflow-hidden shadow-lg min-h-screen">
+    <div className="relative w-full overflow-hidden shadow-lg h-[85vh] border border-red-500 border-4">
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: 5000, disableOnInteraction: true }}
@@ -50,7 +50,7 @@ export default function SwiperCarousel() {
               />
 
               {/* Overlay Text Container */}
-              <div className="absolute bottom-36 md:left-8 bg-black/60 p-6 rounded-xl max-w-xl text-white space-y-2">
+              <div className="absolute md:bottom-36 bottom-50 md:left-8 bg-black/60 p-6 rounded-xl max-w-xl text-white space-y-2">
                 <motion.h4
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
