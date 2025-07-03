@@ -66,11 +66,11 @@ const Header: React.FC = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <motion.nav
-          initial={{ x: '-100%' }}
-          animate={{ x: 0 }}
-          exit={{ x: '-100%' }}
+          initial={{ y: '-100%' }}
+          animate={{ y: 0 }}
+          exit={{ y: '-100%' }}
           transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-          className="md:hidden mt-4 bg-gray-900 rounded-lg shadow-lg"
+          className="md:hidden mt-2 bg-gray-900 rounded-lg shadow-lg min-h-screen z-50 ml-[-20]"
         >
           <ul className="flex flex-col p-4 space-y-3">
             {menuItems.map(({ label, icon: Icon, href }) => (

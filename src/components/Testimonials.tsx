@@ -1,11 +1,10 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay, EffectFade,  } from 'swiper/modules';
+import { Pagination, Autoplay,   } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-import 'swiper/css/effect-fade';
 import Image from 'next/image';
 
 const testimonials = [
@@ -55,7 +54,7 @@ const Testimonies = () => {
       </p>
 
       <Swiper
-        modules={[Pagination, Autoplay, EffectFade]}
+        modules={[Pagination, Autoplay]}
         spaceBetween={30}
         slidesPerView={1}
         loop={true}
@@ -64,9 +63,10 @@ const Testimonies = () => {
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
+        speed={2000}
         pagination={{ clickable: true }}
-        effect="fade"
-        fadeEffect={{ crossFade: true }}
+        // effect="fade"
+        // fadeEffect={{ crossFade: true }}
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
