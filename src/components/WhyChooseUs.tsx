@@ -6,31 +6,31 @@ import Image from 'next/image'
 
 const services =[
   {
-    title: 'Tech Training',
-    description:'Learn from experienced professionals in digital marketing, web development, and graphic design.' ,
-    icon:'/images/cap.png',
+    title: 'Empowering Your Digital Future',
+    description:'From beginners to professionals, our computer training programs equip you with the skills needed to thrive in today’s tech-driven world.' ,
+    icon:'/images/rocket.jpeg',
     bg:"bg-blue-500",
 
   },
   {
-    title: 'Web Development',
-    description:'Digital Transformation That Lasts.From building websites to boosting online presence' ,
-    icon:'/images/code.png',
+    title: 'Websites That Work for You',
+    description:'We build modern, responsive websites that not only look great but also drive results — tailored for individuals, businesses, and organizations.' ,
+    icon:'/images/globe.jpeg',
      bg:"bg-orange-500",
 
   },
   {
-    title: 'Digital Marketing',
-    description:'Learn from experienced professionals in digital marketing, web development, and graphic design' ,
+    title: '📈 Marketing That Delivers',
+    description:'Boost your online presence with result-driven digital marketing strategies — including SEO, social media, and content marketing — to grow your brand faster.' ,
     icon:'/images/speak.png',
-     bg:"bg-blue-500",
+    bg:"bg-orange-500",
 
   },
   {
-    title: 'Graphic Design',
-    description:'Professional graphic design services for branding and marketing materials' ,
+    title: '🎨 Creativity That Speaks',
+    description:'Stand out with stunning graphic designs that capture your brands identity and connect with your audience visually and emotionally.' ,
     icon:'/images/design.png',
-    bg:"bg-orange-500",
+     bg:"bg-blue-500",
 
   },
 ]
@@ -51,7 +51,7 @@ const WhyChooseUs = () => {
    {services.map((service, index) => (
     <div key={index} className='bg-gray-300 md:p-6 p-8  rounded-lg  flex flex-col text-center'>
      <Image  
-     className={`md:w-16 w-8 md:h-16 h-8 mb-4 rounded-lg mx-auto ${service.bg}`}
+     className={`md:w-16 w-12 md:h-16 h-12 mb-4 rounded-lg mx-auto ${service.bg}`}
      src={service.icon}
      alt={service.title}
      width={100}
