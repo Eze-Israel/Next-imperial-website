@@ -10,24 +10,24 @@ const slides = [
   {
     image: '/images/first.png',
     title:
-      'Welcome to Next Imperial Tech Hub ',
-    subtitle: 'The digital and mobile Learning Center',
+      'Expert-Led Training & Development', 
+    subtitle: 'Get hands-on experience from certified professionals in web development, design, and digital tools. We don’t just teach — we mentor you for success.',
   },
   {
     image: '/images/second.png',
     title:
-      'Connect and Access Your Results any where in the world from your Desktop, Phone or Tablet',
-    subtitle: 'Using Next Result System',
+      'Affordable & High-Quality Services',
+    subtitle: 'From websites to graphic design and digital marketing, we deliver premium results without breaking your budget.',
   },
   {
     image: '/images/third.png',
-    title: 'Access and Download your Results Directly from the Dashboard',
-    subtitle: 'Tracking and Calculating Students Performace',
+    title: 'All-in-One Tech Solution Hub',
+    subtitle: 'One stop for computer training, web design, branding, online registration, and more — all under one roof, saving you time and stress.',
   },
   {
     image: '/images/fourth.png',
-    title: 'Monitor your Childs performance from the comfort of your Home',
-    subtitle: 'Parents are Recommended to Use Next Result System',
+    title: 'Proven Track Record of Excellence',
+    subtitle: 'Trusted by individuals and businesses across Lagos for timely delivery, professional service, and ongoing support.',
   },
 ]
 
