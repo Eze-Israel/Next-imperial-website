@@ -87,7 +87,7 @@ const Header: React.FC = () => {
             ))}
             <li>
               <Link
-                href="/Contact"
+                href="/"
                 className="block bg-blue-500 text-center text-white py-2 rounded hover:bg-blue-600"
                 onClick={() => setIsOpen(false)}
               >
