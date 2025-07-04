@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
-import {  FaFacebook, FaYoutube, FaInstagram, FaWhatsapp } from 'react-icons/fa6';
+import {  FaFacebook, FaYoutube, FaInstagram, FaWhatsapp ,FaEnvelope,FaAddressBook } from 'react-icons/fa6';
+
 
 
 
@@ -53,8 +54,8 @@ const Footer = () => {
         <div className=' flex-1'>
           <h3 className='text-lg font-bold mb-4 '> Contact Us </h3>
           <ul className='text-sm'>
-            <li className='mb-2'>Email:@nextImperialLimited.com</li>
-            <li className='mb-2'>Address: No 15 Esuola Street, Off Ago Palace Way, Okota, Lagos</li>
+            <li className='mb-2 flex'><FaEnvelope className='text-blue-500 text text-2xl mr-1'/>@nextImperialLimited.com</li>
+            <li className='mb-2 flex '><FaAddressBook className='text-blue-500 text-2xl mr-1'/> No 15 Esuola Street, Off Ago Palace Way, Okota, Lagos</li>
           </ul>
         </div>
         {/* social media section */}

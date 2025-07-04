@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 
 
+
 const services =[
   {
     title: 'Empowering Your Digital Future',
@@ -20,17 +21,17 @@ const services =[
 
   },
   {
-    title: ' Marketing That Delivers',
-    description:'Boost your online presence with result-driven digital marketing strategies — including SEO, social media, and content marketing — to grow your brand faster.' ,
-    icon:'/images/speak.png',
-    bg:"bg-orange-500",
-
-  },
-  {
     title: ' Creativity That Speaks',
     description:'Stand out with stunning graphic designs that capture your brands identity and connect with your audience visually and emotionally.' ,
     icon:'/images/design.png',
      bg:"bg-blue-500",
+
+  },
+  {
+    title: ' Marketing That Delivers',
+    description:'Boost your online presence with result-driven digital marketing strategies — including SEO, social media, and content marketing — to grow your brand faster.' ,
+    icon:'/images/speak.png',
+    bg:"bg-orange-500",
 
   },
 ]
