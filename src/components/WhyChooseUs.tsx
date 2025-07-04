@@ -8,14 +8,14 @@ const services =[
   {
     title: 'Empowering Your Digital Future',
     description:'From beginners to professionals, our computer training programs equip you with the skills needed to thrive in today’s tech-driven world.' ,
-    icon:'/images/rocket.jpeg',
+    icon:'/images/cap.png',
     bg:"bg-blue-500",
 
   },
   {
     title: 'Websites That Work for You',
     description:'We build modern, responsive websites that not only look great but also drive results — tailored for individuals, businesses, and organizations.' ,
-    icon:'/images/globe.jpeg',
+    icon:'/images/code.png',
      bg:"bg-orange-500",
 
   },
