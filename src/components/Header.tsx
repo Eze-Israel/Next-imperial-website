@@ -15,7 +15,7 @@ import {
 const menuItems = [
   { label: 'Home', icon: HomeIcon, href: '/' },
   { label: 'About Us', icon: UserGroupIcon, href: '/' },
-  { label: 'Contact', icon: PhoneIcon, href: '/' },
+  { label: 'Contact', icon: PhoneIcon, href: '/Contact' },
   { label: 'Services', icon: ServerIcon, href: '/' },
 ];
 
@@ -87,7 +87,7 @@ const Header: React.FC = () => {
             ))}
             <li>
               <Link
-                href="/"
+                href="/Contact"
                 className="block bg-blue-500 text-center text-white py-2 rounded hover:bg-blue-600"
                 onClick={() => setIsOpen(false)}
               >
